@@ -33,32 +33,32 @@ The objective here is to develop an application that provides a list of items wi
    vagrant ssh
    ```
 
-8.Type `cd /vagrant/` to navigate to the shared repository.
+7. Type `cd /vagrant/` to navigate to the shared repository.
 
-9.Download or clone this repository, and navigate to it.
+8. Download or clone this repository, and navigate to it.
 
-11.Install or upgrade Flask:
+9. Install or upgrade Flask:
 
 ```bash
     sudo python3 -m pip install --upgrade flask
 ```
 
-12.Set up the database:
+10. Set up the database:
 
 ```bash
     python3 database_setup.py
 ```
 
-13.Insert dummy values. **If you don't run this, the application might not run.**
+11. Insert dummy values. **If you don't run this, the application might not run.**
 
 ```bash
     python3 menus.py
 ```
 
-14.Run this application:
+12. Run this application:
 
 ```bash
     python3 application.py
 ```
 
-15.Open `http://localhost:5000/` in your favourite Web browser to go through the application.
+13. Open `http://localhost:5000/` in your favourite Web browser to go through the application.
