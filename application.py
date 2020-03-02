@@ -13,6 +13,7 @@ import httplib2
 import json
 from flask import make_response
 import requests
+import psycopg2
 
 app = Flask(__name__)
 
@@ -22,8 +23,8 @@ APPLICATION_NAME = "Restaurant Menu Application"
 
 
 # Connect to Database and create database session
-engine = create_engine('sqlite:///restaurantmenuwithusers.db')
-Base.metadata.bind = engine
+engine = create_engine('postgresql://catalog:password@localhost/catalog')
+
 
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
