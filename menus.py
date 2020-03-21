@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from database_setup import Restaurant, Base, MenuItem, User
 
 # engine = create_engine('sqlite:///restaurantmenuwithusers.db')
-engine = create_engine('postgresql://catalog:password@localhost/catalog')
+engine = create_engine('postgresql://catalog:catalog@localhost/catalog')
 
 Base.metadata.bind = engine
 
